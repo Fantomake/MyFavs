@@ -1,0 +1,8 @@
+# Ignorar archivos temporales
+config.json
+secreto.txt
+DixieLynn.psd
+
+# Ignorar carpetas enteras
+node_modules/
+dist/
