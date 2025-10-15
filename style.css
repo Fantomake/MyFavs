@@ -1,0 +1,411 @@
+* {
+  box-sizing: border-box;
+}
+.oi-regular {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.molle-regular-italic {
+  font-family: "Molle", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+.asimovian-regular {
+  font-family: "Asimovian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.fruktur-regular {
+  font-family: "Fruktur", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fruktur-regular-italic {
+  font-family: "Fruktur", system-ui;
+  font-weight: 400;
+  font-style: italic;
+}
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+.Site_Header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  z-index: 2000;
+}
+
+.MenuRubias {
+  background-color: aqua;
+  color: pink;
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 17px 20px;
+  text-shadow: 1px 1px 2px black;
+  width: 100%;
+  border: 2px solid pink;
+}
+.MenuRubias .RubiasClick {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.MenuRubias .RubiasClick:active {
+  transform: scale(2);
+}
+.MenuNegras {
+  background-color: rgb(110, 35, 35);
+  color: gold;
+  font-family: "molle", serif;
+  font-weight: 400;
+  font-style: italic;
+  padding: 20px 20px;
+  text-shadow: 1px 1px 2px black;
+  width: 100%;
+  border: 2px solid gold;
+}
+.MenuNegras .NegrasClick {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.MenuNegras .NegrasClick:active {
+  transform: scale(2);
+}
+.MenuLatinas {
+  background-color: green;
+  color: red;
+  font-family: "Fruktur", serif;
+  font-weight: 400;
+  font-style: italic;
+  padding: 20px 20px;
+  text-shadow: 1px 1px 2px black;
+  width: 100%;
+  border: 2px solid red;
+}
+.MenuLatinas .LatinasClick {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.MenuLatinas .LatinasClick:active {
+  transform: scale(2);
+}
+
+.MenuAsiaticas {
+  background-color: red;
+  color: gold;
+  font-family: "asimovian", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 19px 20px;
+  text-shadow: 1px 1px 2px black;
+  width: 100%;
+  border: 2px solid gold;
+}
+.MenuAsiaticas .AsiaticasClick {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.MenuAsiaticas .AsiaticasClick:active {
+  transform: scale(2);
+}
+.MenuMorenas {
+  background-color: beige;
+  color: Black;
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 16px 20px;
+  text-shadow: 1px 1px 2px black;
+  width: 100%;
+  border: 2px solid black;
+}
+.MenuMorenas .MorenasClick {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.MenuMorenas .MorenasClick:active {
+  transform: scale(2);
+}
+
+.menu {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  text-align: center;
+  height: 64px;
+  color: aliceblue;
+}
+.Rubias,
+.Morenas,
+.Negras,
+.Latinas,
+.Asiaticas {
+  width: 100%;
+  padding: 100px;
+  min-width: 180px;
+}
+
+.Rubias {
+  background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 100px;
+  text-align: center;
+  gap: 20px;
+}
+.Rubias h1 {
+  color: pink;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px black;
+}
+
+.DixieLynn p,
+.LizaRowe p,
+.MelodyMarks p,
+.SunnyLane p,
+.Emejota p {
+  color: pink;
+  text-shadow: 1px 1px 2px black;
+}
+
+.SunnyLane,
+.LizaRowe,
+.MelodyMarks,
+.DixieLynn,
+.Emejota {
+  width: 24%;
+  text-align: center;
+}
+
+.ImgRubias img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 2px 2px 4px black;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.ImgRubias img:active {
+  transform: scale(1.2);
+}
+.Morenas {
+  background-color: beige;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 100px;
+  text-align: center;
+  gap: 20px;
+}
+.Morenas h1 {
+  color: black;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px black;
+}
+
+.ImgMorenas img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 2px 2px 4px black;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.ImgMorenas img:active {
+  transform: scale(1.2);
+}
+.NuriaMillan p,
+.MariaWars p,
+.RomaAmor p,
+.GinebraBelluci p,
+.AdaParadiso p {
+  color: black;
+  text-shadow: 1px 1px 2px black;
+}
+.NuriaMillan,
+.MariaWars,
+.RomaAmor,
+.GinebraBelluci,
+.AdaParadiso {
+  width: 24%;
+  text-align: center;
+}
+.Negras {
+  background-color: rgb(110, 35, 35);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 100px;
+  text-align: center;
+  gap: 20px;
+}
+.Negras h1 {
+  color: gold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px black;
+}
+
+.ImgNegras img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 2px 2px 4px black;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.ImgNegras img:active {
+  transform: scale(1.2);
+}
+.DaizyCooper p,
+.NiaNacci p,
+.JeniAngel p,
+.AuroraGG p {
+  color: gold;
+  text-shadow: 1px 1px 2px black;
+}
+.DaizyCooper,
+.NiaNacci,
+.JeniAngel,
+.AuroraGG {
+  width: 24%;
+  text-align: center;
+}
+.Latinas {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 100px;
+  text-align: center;
+  gap: 40px;
+}
+
+.Latinas h1 {
+  color: red;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px black;
+}
+
+.ImgLatinas,
+.ImgAsiaticas,
+.ImgMorenas,
+.ImgRubias,
+.ImgNegras {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.ImgLatinas > div,
+.ImgAsiaticas > div,
+.ImgMorenas > div,
+.ImgRubias > div,
+.ImgNegras > div {
+  flex: 0 0 calc(20% - 20px);
+  text-align: center;
+  min-width: 200px;
+}
+
+.ImgLatinas img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 2px 2px 4px black;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.ImgLatinas img:active {
+  transform: scale(1.2);
+}
+.CamilaPalmer,
+.MariaAntoniaAlzate,
+.ValeriaValois,
+.JynxMaze,
+.LucyDoll,
+.YamilethRamirez {
+  color: red;
+  text-shadow: 1px 1px 2px black;
+}
+
+.CamilaPalmer p,
+.MariaAntoniaAlzate p,
+.ValeriaValois p,
+.JynxMaze p,
+.LucyDoll p,
+.YamilethRamirez p {
+  margin-top: 8px;
+}
+
+.Asiaticas {
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 100px;
+  text-align: center;
+  gap: 20px;
+}
+.Asiaticas h1 {
+  color: gold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px black;
+}
+
+.ImgAsiaticas img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 2px 2px 4px black;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.ImgAsiaticas img:active {
+  transform: scale(1.2);
+}
+.LuluChu,
+.LaizaASD,
+.PotchieASD,
+.EmilynASD,
+.AlinaLi {
+  width: 24%;
+  text-align: center;
+}
+.LuluChu p,
+.LaizaASD p,
+.PotchieASD p,
+.EmilynASD p,
+.AlinaLi p {
+  color: gold;
+  text-shadow: 1px 1px 2px black;
+}
+html {
+  scroll-behavior: smooth;
+}
