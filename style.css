@@ -34,7 +34,20 @@
   font-weight: 400;
   font-style: normal;
 }
+/* Solo el div del logo */
+.logo {
+  width: 700px; /* o el tamaño que quieras */
+  margin: 20px auto; /* centra horizontalmente */
+  text-align: center; /* centra la imagen dentro del div */
+}
 
+/* Solo afecta la imagen dentro del div logo */
+.logo img {
+  width: 100%; /* se adapta al ancho del div */
+  height: auto;
+  display: block; /* elimina espacio extra debajo de la imagen */
+  margin-top: 50px;
+}
 html,
 body {
   width: 100%;
@@ -451,5 +464,8 @@ html {
   .Latinas,
   .Asiaticas {
     padding-top: 400px; /* suficiente espacio para el menú fijo */
+  }
+  .logo {
+    display: none;
   }
 }
