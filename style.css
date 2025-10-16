@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 .oi-regular {
   font-family: "Oi", serif;
@@ -33,16 +35,19 @@
   font-style: normal;
 }
 
+html,
 body {
-  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 .Site_Header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: rgb(0, 0, 0);
   width: 100%;
   z-index: 2000;
+  overflow-x: hidden;
 }
 
 .MenuRubias {
@@ -147,7 +152,9 @@ body {
 }
 
 .menu {
-  display: grid;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
   align-items: center;
@@ -155,13 +162,20 @@ body {
   height: 64px;
   color: aliceblue;
 }
+.menu a {
+  flex: 1 1 auto;
+  text-align: center;
+  white-space: nowrap; /* Evita que el texto se parta */
+  min-width: 100px; /* Asegura que se vean bien en móvil */
+}
+
 .Rubias,
 .Morenas,
 .Negras,
 .Latinas,
 .Asiaticas {
   width: 100%;
-  padding: 100px;
+  padding: 40px 10px;
   min-width: 180px;
 }
 
@@ -408,4 +422,34 @@ body {
 }
 html {
   scroll-behavior: smooth;
+}
+@media (max-width: 400px) {
+  .menu {
+    flex-direction: column; /* Apila el menú */
+    align-items: stretch;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  .menu a {
+    display: block;
+    width: 100%;
+    min-width: unset;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* --- ESPACIO EXTRA SOLO EN ESTA RESOLUCIÓN --- */
+  .Site_Header {
+    margin-bottom: 40px; /* deja un poco de espacio debajo del menú */
+  }
+
+  /* --- Asegura que las secciones no se vean tapadas --- */
+  .Rubias,
+  .Morenas,
+  .Negras,
+  .Latinas,
+  .Asiaticas {
+    padding-top: 400px; /* suficiente espacio para el menú fijo */
+  }
 }
